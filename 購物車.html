@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="Zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="../美容/購物車.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="雲霞夕霏書坊">
+        <h1>HuaiFei's office</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="商品.html">商品</a></li>
+                <li id="userInfo"><a href="登入.html">會員登入</a></li>
+                <li><a href="購物車.html">購物車 (<span id="cartCount">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart-section">
+            <h2>購物車</h2>
+            <div id="cartItems">
+                <!-- Cart items sẽ được hiển thị bằng JS -->
+            </div>
+            <div id="cartTotal" class="cart-total">
+                <!-- Tổng tiền sẽ được hiển thị bằng JS -->
+            </div>
+            <div class="cart-actions">
+                <button id="checkoutBtn" class="btn-primary">前往結帳</button>
+                <button id="continueShoppingBtn" class="btn-secondary">繼續購物</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2026 雲霞夕霏書坊 All Rights Reserved.</p>
+    </footer>
+
+    <script src="../登入後臺/購物車.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="Zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+    <link rel="stylesheet" href="../美容/結帳.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="雲霞夕霏書坊">
+        <h1>HuaiFei's office</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="商品.html">商品</a></li>
+                <li id="userInfo"><a href="登入.html">會員登入</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="checkout-section">
+            <h2>結帳</h2>
+            <div id="orderSummary">
+                <!-- Tóm tắt đơn hàng sẽ được hiển thị bằng JS -->
+            </div>
+            <form id="checkoutForm" class="checkout-form">
+                <h3>收貨資訊</h3>
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">地址</label>
+                    <textarea id="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="notes">備註</label>
+                    <textarea id="notes"></textarea>
+                </div>
+
+                <h3>付款方式</h3>
+                <div class="payment-options">
+                    <label>
+                        <input type="radio" name="payment" value="cod" checked>
+                        貨到付款 (現金)
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="bank">
+                        銀行轉帳
+                    </label>
+                </div>
+
+                <div id="bankInfo" class="bank-info" style="display: none;">
+                    <h4>銀行資訊</h4>
+                    <p>銀行: 台灣銀行</p>
+                    <p>帳號: 123-456-789</p>
+                    <p>戶名: 雲霞夕霏書坊</p>
+                    <p>請在轉帳後將收據拍照並寄至我們的Line或Email</p>
+                </div>
+
+                <button type="submit" class="btn-submit">確認訂購</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2026 雲霞夕霏書坊 All Rights Reserved.</p>
+    </footer>
+
+    <script src="../登入後臺/結帳.js"></script>
+</body>
+</html>

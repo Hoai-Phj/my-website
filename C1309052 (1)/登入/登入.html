@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../美容/登.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <form id="formLogin" style="width: 400px;">
+            <h3 class="text-center mb-4">會員登入</h3>
+            <div id="loginError" class="text-danger text-center mb-3" style="display:none"></div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="請輸入Email">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+            </div>
+            <div>
+            <button type="submit" class="btn btn-success" style="width: 100%;">會員登入</button>
+            </div>
+            <p class="text-center mt-3" style="color: white;">
+                您還沒有帳戶？ <a href="注冊.html">立即注冊</a>
+            </p>
+        </form>
+    </div>
+    <!-- Script -->
+    <script src="../登入後臺/登入.js"></script>
+</body>
+</html>

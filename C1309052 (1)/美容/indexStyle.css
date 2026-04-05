@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.news
+{
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    text-align: center; /*Canh giữa nội dung văn bản trong phần tử .news*/
+    text-align: inherit;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /*Thêm bóng đổ cho văn bản để làm nổi bật hơn trên hình nền*/
+    background-image: url('../images/nen.webp'); /*Đặt hình nền cho phần tử .news*/
+    background-repeat: no-repeat; /*Không lặp lại hình nền*/
+    background-size: cover; /*Đảm bảo hình nền bao phủ toàn bộ phần tử, có thể cắt bớt nếu cần thiết để giữ tỷ lệ khung hình*/
+    background-position: center; /*Đảm bảo hình nền được căn giữa và bao phủ toàn bộ phần tử*/
+    justify-content: center; /*Căn giữa nội dung theo chiều ngang*/
+    display:flex;
+    flex-direction: column; /*Sắp xếp nội dung theo chiều dọc*/
+    align-items: center; /*Căn giữa nội dung theo chiều ngang*/
+    height: 380px; /*Đặt chiều cao cho phần tử .news, có thể điều chỉnh theo nhu cầu của bạn*/
+}
+
+.news h2
+{
+    font-family: Arial;
+    margin-top: 100px;
+    font-size: 40px;
+
+}
+
+.news p
+{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.news a
+{
+    display: inline-block; /*Biến liên kết thành phần tử khối để dễ dàng thêm padding và margin*/
+    margin-top: 20px; /*Khoảng cách giữa liên kết và phần tử phía trên*/
+    padding: 10px 20px; /*Thêm khoảng cách bên trong liên kết để làm cho nó trông giống như một nút bấm*/
+    background-color: rgba(255, 255, 255, 0.8); /*Màu nền trắng với độ mờ để làm nổi bật liên kết trên hình nền*/
+    color: rgb(0, 0, 0); /*Màu chữ đen cho liên kết*/
+    text-decoration: none; /*Loại bỏ gạch chân mặc định của liên kết*/
+    border-radius: 5px; /*Bo tròn các góc của liên kết để tạo hiệu ứng nút bấm*/
+    border: 1px solid #ACACAC; /*Thêm đường viền cho liên kết để làm nổi bật hơn*/
+}
+
+.slogan /*Phần tử .slogan chứa slogan của trang web, có thể được đặt ở vị trí nổi bật trên trang chủ để thu hút sự chú ý của người dùng*/
+{
+    background-color: rgba(168, 217, 172, 0.8);
+    color: rgb(255, 255, 255);
+    height: 200px;
+    /*display:flex; /*Biến phần tử .slogan thành flexbox để dễ dàng căn chỉnh nội dung bên trong*/
+    /*flex-direction: column; /*Sắp xếp nội dung theo chiều dọc*/
+    /*padding: 40px 20px; /*Thêm khoảng cách bên trong phần tử để tạo không gian cho nội dung*/
+    justify-content: center; /*Căn giữa nội dung theo chiều ngang*/
+    display:flex;
+    flex-direction: column; /*Sắp xếp nội dung theo chiều dọc*/
+    padding-top: 40px;
+    align-items: center; /*Căn giữa nội dung theo chiều ngang*/
+    text-align: center; /*Canh giữa nội dung văn bản trong phần tử .slogan*/
+    font-size: 20px;
+    line-height: 1.8em;
+}
+
+.shop
+{
+    display: flex; /*Biến phần tử .shop thành flexbox để dễ dàng căn chỉnh các phần tử con bên trong*/
+    justify-content: space-around; /*Phân phối đều các phần tử con trong phần tử .shop với khoảng cách đều nhau giữa chúng*/
+    margin-top: 40px; /*Thêm khoảng cách phía trên phần tử .shop để tạo không gian giữa nó và phần tử phía trên*/
+}
+
+.shop img
+{
+    width: 50%; /*Đặt chiều rộng cho hình ảnh trong phần tử .shop, có thể điều chỉnh theo nhu cầu của bạn*/
+    height: auto; /*Đặt chiều cao cho hình ảnh trong phần tử .shop, có thể điều chỉnh theo nhu cầu của bạn*/
+}
+
+.info /*Phần tử .infor chứa thông tin về cửa hàng hoặc sản phẩm, có thể được đặt ở vị trí nổi bật trên trang chủ để giới thiệu về cửa hàng hoặc sản phẩm của bạn*/
+{
+   width:50%; /*Đặt chiều rộng cho phần tử .infor, có thể điều chỉnh theo nhu cầu của bạn*/
+   background-color: rgba(255, 255, 255, 0.8); /*Màu nền trắng với độ mờ để làm nổi bật phần tử .infor trên hình nền*/
+   display:flex; /*Biến phần tử .infor thành flexbox để dễ dàng căn chỉnh nội dung bên trong*/
+   flex-direction: column; /*Sắp xếp nội dung theo chiều dọc*/
+   align-items: center; /*Căn giữa nội dung theo chiều ngang*/
+   justify-content: center; /*Căn giữa nội dung theo chiều dọc*/
+   padding: 20px; /*Thêm khoảng cách bên trong phần tử .infor để tạo không gian cho nội dung*/
+   text-align: center; /*Canh giữa nội dung văn bản trong phần tử .infor*/
+   font-size: 18px;
+}
+
+.info h2
+{
+    font-size: 24px; /*Đặt kích thước chữ cho tiêu đề trong phần tử .infor, có thể điều chỉnh theo nhu cầu của bạn*/
+    margin-bottom: 20px; /*Thêm khoảng cách phía dưới tiêu đề để tạo không gian giữa nó và phần tử phía dưới*/
+}
+
+.info p
+{
+    font-size: 16px; /*Đặt kích thước chữ cho đoạn văn trong phần tử .infor, có thể điều chỉnh theo nhu cầu của bạn*/
+    line-height: 1.5em; /*Đặt khoảng cách giữa các dòng trong đoạn văn để cải thiện khả năng đọc*/
+}
+
+.product
+{
+    display: flex; /*Biến phần tử .product thành flexbox để dễ dàng căn chỉnh các phần tử con bên trong*/
+    background-color: rgb(252, 248, 243); /*Màu nền trắng cho phần tử .product để làm nổi bật các sản phẩm trên hình nền*/
+    justify-content: space-between; /*Phân phối đều các phần tử con trong phần tử .product với khoảng cách đều nhau giữa chúng*/
+    align-items: center; /*Căn giữa các phần tử con theo chiều dọc trong phần tử .product*/
+    margin-top: 40px; /*Thêm khoảng cách phía trên phần tử .product để tạo không gian giữa nó và phần tử phía trên*/
+    padding: 100px 180px 80px; /*Thêm khoảng cách phía trên và phía dưới phần tử .product để tạo không gian cho nội dung và làm nổi bật hơn trên hình nền*/
+
+}
+
+.product div
+{
+    width: 300px; /*Đặt chiều rộng cho các phần tử con trong phần tử .product, có thể điều chỉnh theo nhu cầu của bạn*/
+    text-align: center; /*Canh giữa nội dung văn bản trong các phần tử con trong phần tử .product*/
+    background-color: rgba(255, 255, 255, 0.8); /*Màu nền trắng với độ mờ để làm nổi bật các phần tử con trong phần tử .product trên hình nền*/
+    display:flex; /*Biến các phần tử con trong phần tử .product thành flexbox để dễ dàng căn chỉnh nội dung bên trong*/
+    flex-direction: column; /*Sắp xếp nội dung theo chiều dọc*/
+    justify-content: center; /*Căn giữa nội dung theo chiều dọc*/
+    padding: 20px; /*Thêm khoảng cách bên trong các phần tử con trong phần tử .product để tạo không gian cho nội dung*/
+    text-align: center; /*Canh giữa nội dung văn bản trong các phần tử con trong phần tử .product*/
+}
+
+.product img
+{
+    width: 100%; /*Đặt chiều rộng cho hình ảnh trong các phần tử con trong phần tử .product, có thể điều chỉnh theo nhu cầu của bạn*/
+    height: auto; /*Đặt chiều cao cho hình ảnh trong các phần tử con trong phần tử .product, có thể điều chỉnh theo nhu cầu của bạn*/
+    margin-bottom: 20px; /*Thêm khoảng cách phía dưới hình ảnh để tạo không gian giữa nó và phần tử phía dưới*/
+}
+
+.product h3
+{
+    font-size: 20px; /*Đặt kích thước chữ cho tiêu đề trong các phần tử con trong phần tử .product, có thể điều chỉnh theo nhu cầu của bạn*/
+    margin-bottom: 10px; /*Thêm khoảng cách phía dưới tiêu đề để tạo không gian giữa nó và phần tử phía dưới*/
+}
+
+.product p
+{
+    font-size: 16px; /*Đặt kích thước chữ cho đoạn văn trong các phần tử con trong phần tử .product, có thể điều chỉnh theo nhu cầu của bạn*/
+    line-height: 1.5em; /*Đặt khoảng cách giữa các dòng trong đoạn văn để cải thiện khả năng đọc*/
+}
+
+.newsletter 
+{
+    background-color: rgba(168, 217, 172, 0.8);
+    color: rgb(255, 255, 255);
+    height: 120px;
+    display:flex; /*Biến phần tử .newsletter thành flexbox để dễ căn chỉnh nội dung bên trong*/
+    flex-direction: column; /*Sắp xếp nội dung theo chiều dọc*/
+    padding-top: 20px; /*Thêm khoảng cách phía trên phần tử .newsletter để tạo không gian giữa nó và cái phía trên*/
+    align-items: center; /*Căn giữa nội dung theo chiều ngang*/
+    justify-items: center;
+    text-align: center; /*Canh giữa nội dung văn bản trong phần tử .newsletter*/
+    font-size: 20px;
+}
+
+.newsletter p
+{
+    font-size: 22px; /*Đặt kích thước chữ cho đoạn văn trong phần tử .newsletter, có thể điều chỉnh*/
+    margin-top: 10px; /*Thêm khoảng cách phía trên đoạn văn để tạo không gian giữa nó và cái phía trên*/
+    line-height: 1.5em; /*Đặt khoảng cách giữa các dòng trong đoạn văn để cải thiện khả năng đọc*/
+}
+
+.newsletter input
+{
+    border: none; /*Loại bỏ đường viền mặc định của trường nhập email*/
+    padding: 10px; /*Thêm khoảng cách bên trong trường nhập email để tạo không gian cho nội dung*/
+    border:  1px solid #ACACAC; /*Thêm đường viền cho trường nhập email để làm nổi bật hơn*/
+    border-radius:  5px; /*Bo tròn các góc của trường nhập email để tạo hiệu ứng mềm mại hơn*/
+    margin-top: 5px; /*Thêm khoảng cách phía trên trường nhập email để tạo không gian giữa nó và đoạn văn phía trên*/
+    width: 300px; /*Đặt chiều rộng cho trường nhập email, có thể điều chỉnh theo nhu cầu của bạn*/
+    cursor: pointer; /*Thêm con trỏ chuột khi di chuột qua trường nhập email để tạo hiệu ứng tương tác*/
+    margin-right: 15px;  /*Thêm khoảng cách giữa trường nhập email và nút đăng ký*/
+}
+
+.newsletter button
+{
+    border: none; /*Loại bỏ đường viền mặc định của nút đăng ký*/
+    padding: 10px 20px; /*Thêm khoảng cách bên trong nút đăng ký để tạo không gian cho nội dung*/
+    background-color: rgba(255, 255, 255, 0.8); /*Màu nền trắng với độ mờ để làm nổi bật nút đăng ký trên hình nền*/
+    color: rgb(0, 0, 0); /*Màu chữ đen cho nút đăng ký*/
+    text-decoration: none; /*Loại bỏ gạch chân mặc định của liên kết trong nút đăng ký*/
+    border-radius: 5px; /*Bo tròn các góc của nút đăng ký để tạo hiệu ứng mềm mại hơn*/
+    border: 1px solid #ACACAC; /*Thêm đường viền cho nút đăng ký để làm nổi bật hơn*/
+    cursor: pointer; /*Thêm con trỏ chuột khi di chuột qua nút đăng ký để tạo hiệu ứng tương tác*/
+}
+
+ input::placeholder {
+    color: #ACACAC; /*Đặt màu chữ cho placeholder trong trường nhập email để làm nổi bật hơn*/
+}
+
+input:focus { 
+    outline: none; /*Loại bỏ đường viền mặc định khi trường nhập email được chọn*/
+    border-color: #ACACAC; /*Thay đổi màu đường viền khi trường nhập email được chọn để làm nổi bật hơn*/
+    box-shadow: 0 0 5px rgba(172, 172, 172, 0.5); /*Thêm hiệu ứng bóng đổ khi trường nhập email được chọn để tạo hiệu ứng tương tác*/
+}
+
+.menu
+{
+    display: none; /*Ẩn phần tử .menu mặc định, sẽ hiển thị khi người dùng nhấp vào biểu tượng menu trên thiết bị di động*/
+    background-color: rgba(255, 211, 226, 0.8);
+    color: rgb(0, 0, 0);
+    height: 40px;
+    display: flex; /*Biến phần tử .menu thành flexbox để dễ căn chỉnh các phần tử con bên trong*/
+    justify-content: center; /*Căn giữa các phần tử con theo chiều ngang trong phần tử .menu*/
+    align-items: center; /*Căn giữa các phần tử con theo chiều dọc trong phần tử .menu*/
+    text-align: center; /*Canh giữa nội dung văn bản trong phần tử .menu*/
+    font-size: 18px;
+    padding: 10px; /*Thêm khoảng cách bên trong phần tử .menu để tạo không gian cho nội dung*/
+    position: absolute; /*Đặt vị trí tuyệt đối cho phần tử .menu để nó có thể hiển thị trên cùng của các phần tử khác khi được kích hoạt*/
+    top: 80px; /*Đặt vị trí của phần tử .menu ngay dưới header khi được kích hoạt*/
+    left: 0; /*Đặt phần tử .menu bắt đầu từ lề trái của trang*/
+    width: 100%; /*Đặt chiều rộng cho phần tử .menu để nó chiếm toàn bộ chiều rộng của trang khi được kích hoạt*/
+}
+
+/*header ul { 
+     display: none; /*Ẩn phần tử <ul> trong header để chỉ hiển thị biểu tượng menu trên thiết bị di động*/
+/*}*/
+
+header h1
+{
+    left:25%;
+    transform: translateX(-50%); /*Căn giữa tiêu đề trong header bằng cách dịch chuyển nó sang trái một nửa chiều rộng của chính nó*/
+}
+
+.news h2
+{
+    font-size: 30px; /*Đặt kích thước chữ cho tiêu đề trong phần tử .news, có thể điều chỉnh theo nhu cầu của bạn*/
+    margin-top: 80px; /*Thêm khoảng cách phía trên tiêu đề để tạo không gian giữa nó và phần tử phía trên*/
+}
+
+@media (max-width: 680px) {
+    *, html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 0 10px;
+    }
+
+    .menu {
+        display: flex;
+        background-color: transparent;
+        color: white;
+        font-size: 28px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        width: auto;
+    }
+
+    header {
+        flex-wrap: wrap; /*Cho phép header tự động xuống dòng khi kích thước màn hình nhỏ hơn 680px*/
+    }
+
+    .news {
+        margin-top: 100px;
+        padding: 30px 10px;
+        height: auto;
+    }
+
+    .news h2 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .news p {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .news a {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+    .slogan {
+        padding: 30px 10px;
+        font-size: 18px;
+        line-height: 1.6em;
+        height: auto;
+    }
+
+    .shop {
+        flex-direction: column;  /*Sắp xếp các phần tử con trong phần tử .shop theo chiều dọc trên thiết bị di động*/
+        align-items: center; /*Căn giữa các phần tử con theo chiều ngang trong phần tử .shop trên thiết bị di động*/
+        padding-top: 20px; /*Thêm khoảng cách phía trên phần tử .shop để tạo không gian giữa nó và phần tử phía trên trên thiết bị di động*/
+    }
+
+    .shop img {
+        width: 100%; /*Đặt chiều rộng cho hình ảnh trong phần tử .shop trên thiết bị di động*/
+        max-width: 420px;
+        height: auto; /*Giữ tỉ lệ cao/thấp*/
+        margin-bottom: 20px; /*Khoảng cách phía dưới hình ảnh*/
+    }
+
+    .info {
+        width: 100%; /*Chiếm hết chiều ngang trên thiết bị di động*/
+        margin-top: 20px; /*Khoảng cách phía trên*/
+        padding: 20px;
+    }
+
+    .info h2 {
+        font-size: 26px; /*Kích thước chữ lớn hơn cho tiêu đề trên thiết bị di động*/
+        margin-bottom: 10px;
+    }
+
+    .info p {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    .product {
+        flex-direction: column; /*Sắp xếp các phần tử con trong phần tử .product theo chiều dọc trên thiết bị di động*/
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .product div {
+        width: 100%; /*Mở rộng khung sản phẩm trên thiết bị nhỏ*/
+        max-width: 420px;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 18px;
+    }
+
+    .product p {
+        font-size: 15px;
+    }
+
+    .newsletter {
+        padding: 20px 10px;
+    }
+
+    .newsletter p {
+        font-size: 18px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        max-width: 240px;
+    }
+}
+

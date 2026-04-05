@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../美容/登.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <form id="formRegister" style="width: 400px;">
+            <h3 class="text-center mb-4">注冊賬戶</h3>
+            <div class="mb-3">
+                <label for="name" class="form-label">姓名</label>
+                <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+                <div id="nameError" class="text-danger"; style="display: none">請輸入姓名</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="請輸入Email" autocomplete="email">
+                <div id="emailError" class="text-danger"; style="display: none">請輸入有效的Email地址</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" autocomplete="new-password">
+                <div id="passwordError" class="text-danger"; style="display: none">請輸入密碼</div>
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Xác nhận mật khẩu" autocomplete="new-password">
+                <div id="confirmPasswordError" class="text-danger"; style="display: none">密碼不匹配</div>
+            </div>
+            <div>
+            <button type="submit" class="btn btn-success" style="width: 100%;">注冊</button>
+            </div>
+            <p class="text-center mt-3" style="color: white;">
+                您已經有帳戶了？ <a href="登入.html">立即登入</a>
+            </p>
+
+        </form>
+    </div>
+    <!-- Script -->
+     <script src="../登入後臺/注冊.js"></script>
+</body>
+</html>

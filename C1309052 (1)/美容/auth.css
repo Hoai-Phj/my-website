@@ -1,0 +1,142 @@
+:root {
+    /* Màu nền chính của vùng auth (đang chưa dùng trực tiếp) */
+    --auth-bg-color: rgba(6, 12, 25, 0.55);
+    /* Màu nền thẻ form */
+    --card-bg: rgba(255, 255, 255, 0.82);
+    /* Màu viền thẻ form */
+    --card-border: rgba(255, 255, 255, 0.65);
+    /* Bóng đổ dùng cho thẻ form */
+    --shadow: 0 22px 60px rgba(255, 255, 255, 0.411);
+    /* Màu chính dùng cho liên kết và nút */
+    --primary: #1a6f55;
+}
+
+* {
+    /* Đặt box-sizing để padding/border không thay đổi kích thước phần tử */
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Chiều cao tối thiểu cho toàn bộ trang */
+    min-height: 100%;
+    /* Xóa khoảng cách mặc định của trình duyệt */
+    margin: 0;
+    /* Chữ mặc định cho giao diện */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* Nền ảnh kết hợp gradient tối để chữ dễ đọc */
+    background: linear-gradient(180deg, rgb(252, 234, 243), rgba(6, 12, 25, 0.72)), url("../images/taohua.jpg") no-repeat center / cover;
+    /* Màu chữ chính */
+    color: #222;
+}
+
+body {
+    /* Căn phần tử con vào giữa trang */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.d-flex {
+    /* Dải rộng khu vực form */
+    width: 100%;
+    /* Giới hạn chiều rộng tối đa */
+    max-width: 480px;
+    /* Padding hai bên để không dính sát mép */
+    padding: 0 16px;
+}
+
+form {
+    /* Form chiếm hết chiều ngang container */
+    width: 100%;
+    /* Nền thẻ form mờ trắng */
+    background: var(--card-bg);
+    /* Viền mờ nhẹ */
+    border: 1px solid var(--card-border);
+    /* Bo góc thẻ */
+    border-radius: 10px;
+    /* Bóng đổ sâu */
+    box-shadow: var(--shadow);
+    /* Padding bên trong thẻ */
+    padding: 32px 28px;
+    /* Làm mờ phông nền phía sau thẻ */
+    backdrop-filter: blur(2px);
+    background: transparent;
+}
+
+h3 {
+    /* Màu tiêu đề */
+    color: #fbfdff;
+    /* Khoảng cách giữa chữ */
+    letter-spacing: 0.04em;
+}
+
+label {
+    /* In đậm nhãn */
+    font-weight: 600;
+    /* Màu chữ nhãn */
+    color: #ffffff;
+}
+
+.form-control {
+    /* Bo góc input */
+    border-radius: 14px;
+    /* Viền input nhẹ */
+    border: 1px solid rgb(255, 255, 255);
+    /* Padding trong input */
+    padding: 12px 14px;
+    /* Nền input hơi trắng và mờ */
+    background: rgb(255, 255, 255,0.4);
+
+    
+}
+
+.btn-success {
+    /* Nền gradient cho nút */
+    background: linear-gradient(135deg, #2c8f6a, #1d6a52);
+    /* Xóa viền mặc định */
+    border: none;
+    /* Nút bo tròn đầy đủ */
+    border-radius: 999px;
+    /* Chiều cao nút */
+    padding: 12px 0;
+}
+
+.btn-success:hover {
+    /* Đổi màu khi hover */
+    background: linear-gradient(135deg, #1d6a52, #2c8f6a);
+}
+
+.text-center a {
+    /* Màu liên kết */
+    color: #38ba95;
+    /* Xóa gạch chân mặc định */
+    text-decoration: none;
+    /* In đậm liên kết */
+    font-weight: 600;
+}
+
+.text-center a:hover {
+    /* Gạch dưới khi hover để dễ nhìn */
+    text-decoration: underline;
+}
+
+.text-danger {
+    /* Màu lỗi */
+    color: #b02a37 !important;
+    /* Kích thước chữ thông báo lỗi */
+    font-size: 0.95rem;
+    /* Khoảng cách phía trên với nội dung trước */
+    margin-top: 6px;
+}
+
+@media (max-width: 576px) {
+    html, body {
+        /* Dịch nền lên trên trên màn nhỏ */
+        background-position: top center;
+    }
+
+    form {
+        /* Giảm padding trên mobile */
+        padding: 24px 18px;
+    }
+}
